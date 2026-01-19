@@ -98,6 +98,8 @@ python main.py --interactive
 
 ## Quick Commands
 ```bash
+#help
+python main.py --help
 # Ask a question
 python main.py "your question here"
 
