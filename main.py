@@ -108,7 +108,7 @@ def run_interactive_mode(rag: RagEngine):
     print("\n" + "=" * 70)
     print("   RAG Q&A SYSTEM - Interactive Mode")
     print("=" * 70)
-    print("Type your questions below. Type 'exit', 'quit', or 'q' to stop.\n")
+    print("Type your questions below. Type 'exit', 'quit', 'q' to stop.\n")
     
     while True:
         try:
