@@ -189,6 +189,8 @@ Options:
 **Answer:** Answer: The menu for Friday is Fish & Chips (Chef's Special!). Please note that the cafeteria is closed for cleaning on Friday afternoons.<br>
     Sources: friday_cafeteria_menu.txt
 
+### Query 3: Random Irrelevant
+
 **Question 5:** "What is happening in the American branch?"<br>
 **Answer:** Answer: No relevant documents found to answer your question.<br>
     Sources: 
