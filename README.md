@@ -282,7 +282,7 @@ active_provider: "gemini"
 models:
   gemini:
     embedding_model: "gemini-embedding-001"
-    llm_model: "gemini-2.5-flash"
+    gemini_model: "gemini-2.5-flash"
     embedding_dimension: 768
     task_type: "retrieval-document"
     temperature_intent: 0
