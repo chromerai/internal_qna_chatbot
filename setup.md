@@ -8,7 +8,7 @@ Quick setup instructions for the Policy RAG System.
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.12+
 - Conda or pip
 - Google Gemini API key
 - 2GB free disk space
@@ -18,7 +18,6 @@ Quick setup instructions for the Policy RAG System.
 ## Step 1: Clone Repository
 ```bash
 git clone <repository-url>
-cd policy-rag-system
 ```
 
 ---
@@ -42,11 +41,10 @@ pip install -r requirements.txt
 
 ## Step 3: Get API Key
 
-1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
+1. Visit [Google AI Studio](https://aistudio.google.com/app)
 2. Click **"Get API Key"**
-3. Copy your API key
-
-**Student Tip:** Check [Google Cloud Education](https://cloud.google.com/edu) for extra credits.
+3. Create a project
+4. Copy your API key
 
 ---
 
@@ -65,7 +63,7 @@ Replace `your_api_key_here` with your actual API key.
 
 ## Step 5: Verify Installation
 ```bash
-python -c "import langchain; import chromadb; print('✅ Dependencies OK')"
+python -c "import langchain; import chromadb; print('Dependencies OK')"
 ```
 
 ---
@@ -82,7 +80,7 @@ Initializing RAG Pipeline...
 Found 3 files
     Processing: policy_v1_2021.txt
     ...
-✅ Documents ingested successfully!
+Documents ingested successfully!
 ```
 
 ---
@@ -160,7 +158,7 @@ TOP_K: 3                          # Number of documents to retrieve
 ## Adding Documents
 ```bash
 # 1. Add .txt file to knowledge_base/
-cp your_document.txt knowledge_base/
+cp <document>.txt knowledge_base/
 
 # 2. Re-ingest
 python main.py --ingest
@@ -180,7 +178,7 @@ conda deactivate
 conda env remove -n policy_rag
 
 # Clean up
-rm -rf chroma_db logs
+rm -rf chroma_db output_logs
 ```
 
 ---
@@ -191,13 +189,6 @@ rm -rf chroma_db logs
 - Check example outputs
 - Customize `config.yaml`
 - Add your own documents
-
----
-
-## Need Help?
-
-- Check [GitHub Issues](your-repo-url/issues)
-- Review [Gemini API Docs](https://ai.google.dev/docs)
 
 ---
 
