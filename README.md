@@ -4,15 +4,15 @@ A Retrieval-Augmented Generation (RAG) system for querying company policies and 
 
 ## 📋 Table of Contents
 
-- [Overview](#overview)
-- [Model Choice: Why Gemini?](#model-choice-why-gemini)
-- [Features](#features)
-- [Design Decisions](#design-decisions)
-- [Quick Setup](#quick-setup)
-- [Usage](#usage)
-- [Example Outputs](#example-outputs)
-- [Limitations](#limitations)
-- [Technical Architecture](#technical-architecture)
+- [Overview](#-overview)
+- [Model Choice: Why Gemini?](#-model-choice-why-gemini)
+- [Features](#-features)
+- [Design Decisions](#-design-decisions)
+- [Quick Setup](#-quick-setup)
+- [Usage](#-usage)
+- [Example Outputs](#-example-outputs)
+- [Limitations](#-limitations)
+- [Technical Architecture](#-technical-architecture)
 
 ## 🎯 Overview
 

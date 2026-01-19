@@ -8,7 +8,7 @@ Quick setup instructions for the Policy RAG System.
 
 ## Prerequisites
 
-- Python 3.12+
+- Python 3.11+ (project uses: 3.12.12)
 - Conda or pip
 - Google Gemini API key
 - 2GB free disk space
