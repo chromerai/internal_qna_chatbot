@@ -168,8 +168,8 @@ Options:
 ### Query 1: Remote Work Policy
 **Question:** "Can I work from home?"
 
-![Question1 and 2](./artifacts/screenshots_outputs/Screenshot 2026-01-19 at 9.31.23 AM.png)
-![Question3 and 4](./artifacts/screenshots_outputs/Screenshot 2026-01-19 at 9.41.01 AM.png)
+![Q_1_and_2](./artifacts/screenshots_outputs/Screenshot 2026-01-19 at 9.31.23 AM.png)
+![Q_3_and_4](./artifacts/screenshots_outputs/Screenshot 2026-01-19 at 9.41.01 AM.png)
 ![Question5](./artifacts/screenshots_outputs/Screenshot 2026-01-19 at 9.41.33 AM.png)
 
 *[Screenshots will be added here after testing]*
