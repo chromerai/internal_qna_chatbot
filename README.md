@@ -183,6 +183,8 @@ Options:
 
 ![Q_2_and_3](artifacts/screenshots_outputs/Screenshot_1.png)
 
+### Query 2: Menu Query
+
 **Question 4:** "What is the menu for friday?"<br>
 **Answer:** Answer: The menu for Friday is Fish & Chips (Chef's Special!). Please note that the cafeteria is closed for cleaning on Friday afternoons.<br>
     Sources: friday_cafeteria_menu.txt
@@ -193,13 +195,13 @@ Options:
 
 ![Q_4_and_5](artifacts/screenshots_outputs/Screenshot_3.png)
 
+### Query 3: Random Irrelevant
+
 **Question 6:** "what is current updates around the world?"<br>
 **Answer:** Answer: I don't have information about that in the company documents. I can only help with TechCorp policies, menus, and memos.<br>
     Sources: 
 
 ![Question6](artifacts/screenshots_outputs/Screenshot_2.png)
-
-*[Screenshots will be added here after testing]*
 
 ## Limitations
 
