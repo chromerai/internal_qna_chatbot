@@ -166,31 +166,38 @@ Options:
 ## 📸 Example Outputs
 
 ### Query 1: Remote Work Policy
-**Question 1:** "Can I work full remotely?"
-**Answer:** Answer: No, 100% remote work is no longer permitted. The current policy, effective January 1, 2024, caps remote work at 1 day per week, requiring manager approval. Employees are expected to be in the office 4 days a week.
+
+**Question 1:** "Can I work fully remotely this Friday?<br>
+**Answer:** Answer: No, fully remote work is not permitted. Remote work is capped at 1 day per week and must be approved by a manager. Employees are expected to be in the office 4 days a week.<br>
     Sources: policy_v2_2024.txt
 
-**Question 2:** "Can I work full remotely from home this friday?"
+![Question1](artifacts/screenshots_outputs/Screenshot_4.png)
+
+**Question 2:** "Can I work full remotely?"<br>
+**Answer:** Answer: No, 100% remote work is no longer permitted. The current policy, effective January 1, 2024, caps remote work at 1 day per week, requiring manager approval. Employees are expected to be in the office 4 days a week.<br>
+    Sources: policy_v2_2024.txt
+
+**Question 3:** "Can I work full remotely from home this friday?"<br>
 **Answer:** Answer: Yes, you can work remotely for one day per week, provided it is approved by your manager. The 100% remote work policy from 2021 has been revoked.
     Sources: policy_v2_2024.txt
 
-![Q_1_and_2](artifacts/screenshots_outputs/Screenshot_1.png)
+![Q_2_and_3](artifacts/screenshots_outputs/Screenshot_1.png)
 
-**Question 3:** "What is the menu for friday?"
-**Answer:** Answer: The menu for Friday is Fish & Chips (Chef's Special!). Please note that the cafeteria is closed for cleaning on Friday afternoons.
+**Question 4:** "What is the menu for friday?"<br>
+**Answer:** Answer: The menu for Friday is Fish & Chips (Chef's Special!). Please note that the cafeteria is closed for cleaning on Friday afternoons.<br>
     Sources: friday_cafeteria_menu.txt
 
-**Question 4:** "What is happening in the American branch?"
-**Answer:** Answer: No relevant documents found to answer your question.
+**Question 5:** "What is happening in the American branch?"<br>
+**Answer:** Answer: No relevant documents found to answer your question.<br>
     Sources: 
 
-![Q_3_and_4](artifacts/screenshots_outputs/Screenshot_3.png)
+![Q_4_and_5](artifacts/screenshots_outputs/Screenshot_3.png)
 
-**Question 5:** "what is current updates around the world?"
-**Answer:** Answer: I don't have information about that in the company documents. I can only help with TechCorp policies, menus, and memos.
+**Question 6:** "what is current updates around the world?"<br>
+**Answer:** Answer: I don't have information about that in the company documents. I can only help with TechCorp policies, menus, and memos.<br>
     Sources: 
 
-![Question5](artifacts/screenshots_outputs/Screenshot_2.png)
+![Question6](artifacts/screenshots_outputs/Screenshot_2.png)
 
 *[Screenshots will be added here after testing]*
 
