@@ -1,0 +1,40 @@
+# ============================================================================
+# RAG System Configuration
+# ============================================================================
+# Edit this file to customize your RAG system settings.
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# PATHS
+# ----------------------------------------------------------------------------
+paths:
+  knowledge_base: "knowledge_base"
+  chroma_persist_dir: "./chroma_db"
+  collection_name: "techcorp_docs"
+
+# ----------------------------------------------------------------------------
+# MODELS
+# ----------------------------------------------------------------------------
+active_provider: "gemini"
+
+# Model Configurations
+models:
+  gemini:
+    embedding_model: "gemini-embedding-001"
+    llm_model: "gemini-2.5-flash"
+    embedding_dimension: 768
+    task_type: "retrieval-document"
+    temperature_intent: 0
+    temperature_content: 0.5
+    max_tokens: 1024
+
+# ----------------------------------------------------------------------------
+# RETRIEVAL SETTINGS
+# ----------------------------------------------------------------------------
+retrieval:
+  # Number of documents to retrieve
+  top_k: 5
+  similarity_search_k: 10
+# ----------------------------------------------------------------------------
+# DOCUMENT PROCESSING - USEFUL WHEN BIGGFER DOCUMENTS PROVIDED
+# ----------------------------------------------------------------------------
