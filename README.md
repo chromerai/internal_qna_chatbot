@@ -118,7 +118,7 @@ conda env create -f environment.yml
 conda activate policy_rag
 
 # 3. Set up API key
-echo "GOOGLE_API_KEY=your_api_key_here" > .env
+echo "GEMINI_API_KEY=your_api_key_here" > .env
 
 # 4. Ingest documents
 python main.py --ingest
