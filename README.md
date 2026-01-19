@@ -168,53 +168,9 @@ Options:
 ### Query 1: Remote Work Policy
 **Question:** "Can I work from home?"
 
-**Output (Compact):**
-```
-----------------------------------------------------------------------
-💡 Answer: Yes, according to the latest remote work policy (v2, 2024), 
-employees can work remotely up to 3 days per week with manager approval.
-📚 Sources: policy_v2_2024.txt
-----------------------------------------------------------------------
-```
-
-**Output (Full):**
-```
-======================================================================
-   QUESTION:
-======================================================================
-
-Can I work from home?
-
-======================================================================
-   ANSWER:
-======================================================================
-
-Yes, according to the latest remote work policy (v2, 2024), employees 
-can work remotely up to 3 days per week with manager approval.
-
-----------------------------------------------------------------------
-   DETAILS:
-----------------------------------------------------------------------
-Reasoning: The query asks about remote work eligibility. I retrieved 
-the most recent policy version (v2 from 2024) which supersedes the 
-older v1 policy from 2021. The current policy allows remote work with 
-specific conditions.
-Sources: policy_v2_2024.txt
-Policy allows remote: True
-======================================================================
-```
-
-### Query 2: Cafeteria Menu
-**Question:** "What's available in the cafeteria on Friday?"
-
-**Output:**
-```
-----------------------------------------------------------------------
-💡 Answer: The Friday cafeteria menu includes: Veg Biryani, Paneer 
-Tikka Masala, Dal Tadka, Salad Bar, and Gulab Jamun for dessert.
-📚 Sources: friday_cafeteria_menu.txt
-----------------------------------------------------------------------
-```
+![Question1 and 2](./artifacts/screenshots_outputs/Screenshot 2026-01-19 at 9.31.23 AM.png)
+![Question3 and 4](./artifacts/screenshots_outputs/Screenshot 2026-01-19 at 9.41.01 AM.png)
+![Question5](./artifacts/screenshots_outputs/Screenshot 2026-01-19 at 9.41.33 AM.png)
 
 *[Screenshots will be added here after testing]*
 
