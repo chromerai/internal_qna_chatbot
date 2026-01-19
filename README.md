@@ -105,7 +105,7 @@ This implementation intentionally **does not chunk documents** for the following
 
 ## 🚀 Quick Setup
 
-See **[SETUP.md](SETUP.md)** for detailed installation instructions.
+See **[SETUP.md](setup.md)** for detailed installation instructions.
 
 **TL;DR:**
 ```bash
