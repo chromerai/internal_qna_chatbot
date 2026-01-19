@@ -166,11 +166,31 @@ Options:
 ## 📸 Example Outputs
 
 ### Query 1: Remote Work Policy
-**Question:** "Can I work from home?"
+**Question 1:** "Can I work full remotely?"
+**Answer:** Answer: No, 100% remote work is no longer permitted. The current policy, effective January 1, 2024, caps remote work at 1 day per week, requiring manager approval. Employees are expected to be in the office 4 days a week.
+    Sources: policy_v2_2024.txt
+
+**Question 2:** "Can I work full remotely from home this friday?"
+**Answer:** Answer: Yes, you can work remotely for one day per week, provided it is approved by your manager. The 100% remote work policy from 2021 has been revoked.
+    Sources: policy_v2_2024.txt
 
 ![Q_1_and_2](artifacts/screenshots_outputs/Screenshot_1.png)
-![Q_3_and_4](artifacts/screenshots_outputs/Screenshot_2.png)
-![Question5](artifacts/screenshots_outputs/Screenshot_3.png)
+
+**Question 3:** "What is the menu for friday?"
+**Answer:** Answer: The menu for Friday is Fish & Chips (Chef's Special!). Please note that the cafeteria is closed for cleaning on Friday afternoons.
+    Sources: friday_cafeteria_menu.txt
+
+**Question 4:** "What is happening in the American branch?"
+**Answer:** Answer: No relevant documents found to answer your question.
+    Sources: 
+
+![Q_3_and_4](artifacts/screenshots_outputs/Screenshot_3.png)
+
+**Question 5:** "what is current updates around the world?"
+**Answer:** Answer: I don't have information about that in the company documents. I can only help with TechCorp policies, menus, and memos.
+    Sources: 
+
+![Question5](artifacts/screenshots_outputs/Screenshot_2.png)
 
 *[Screenshots will be added here after testing]*
 
