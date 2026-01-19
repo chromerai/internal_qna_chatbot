@@ -12,7 +12,7 @@ A Retrieval-Augmented Generation (RAG) system for querying company policies and 
 - [Usage](#-usage)
 - [Example Outputs](#-example-outputs)
 - [Limitations](#-limitations)
-- [Technical Architecture](https://github.com/chromerai/internal_qna_chatbot/blob/master/README.md#%EF%B8%8F-technical-architecture)
+- [Technical Architecture](#-technical-architecture)
 
 ## 🎯 Overview
 
@@ -218,7 +218,7 @@ Tikka Masala, Dal Tadka, Salad Bar, and Gulab Jamun for dessert.
 
 *[Screenshots will be added here after testing]*
 
-## ⚠️ Limitations
+## Limitations
 
 ### Current Limitations
 1. **Document Format**: Only supports `.txt` files (no PDF, DOCX, etc.)

@@ -112,7 +112,7 @@ def run_interactive_mode(rag: RagEngine):
     
     while True:
         try:
-            question = input("  Your question: ").strip()
+            question = input("  ❓ Your question: ").strip()
             
             if question.lower() in ['exit', 'quit', 'q', '']:
                 print("\n👋 Goodbye!\n")
