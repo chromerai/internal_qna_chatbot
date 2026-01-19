@@ -12,7 +12,7 @@ A Retrieval-Augmented Generation (RAG) system for querying company policies and 
 - [Usage](#-usage)
 - [Example Outputs](#-example-outputs)
 - [Limitations](#-limitations)
-- [Technical Architecture](#-technical-architecture)
+- [Technical Architecture](https://github.com/chromerai/internal_qna_chatbot/blob/master/README.md#%EF%B8%8F-technical-architecture)
 
 ## 🎯 Overview
 
@@ -234,7 +234,7 @@ Tikka Masala, Dal Tadka, Salad Bar, and Gulab Jamun for dessert.
 - Metadata extraction relies on filename patterns (e.g., `policy_v2_2024.txt`)
 - ChromaDB persistence directory must be writable
 
-## 🏗️ Technical Architecture
+## Technical Architecture
 
 ### Component Overview
 [![](https://mermaid.ink/img/pako:eNqtkmFr2zAQhv-KUD7OyWzLTmwxCokdRiBjhY59mF2KbJ9tEVsyikyahfz3qrZbWgZjsApx3Env-5wkdMG5LABTXDbylNdMafQjTgUyY520jItFd_6Sqc830X6HdkKDKlkO92g-v0GbRLHqAUTFBbzIvqu8hqNWTHMp0J6dQd2PuM3giZKoVrJl8WaQ_4RcS4XuTIB3ujjhojIgQ3noeAeN6TE4Ypn3LQiNbpXM4Xg0sskYDcZt8hVaLjha3-4Gw37_DX1C2zaDYhLGo3AsxnjU5wbQGpW8aejMYSsCgWWuIQ9AZ7ZtT_n8xAtdU9I9WrlspKKzsiytUgo9PwGvak0z2RRvkZsJWWZZbnv_hHze-xsympAhIR4sP-SU8ccjtxOSeCzwyX8ix2j-wOFugBdQsr7R6IVKCPmDii1cKV5gWrLmCBZuQZn_bGp8ecalWNfQQoqpSQumDilOxdWYOiZ-SdliqlVvbEr2Vf0K6buCaYg5qxRrX1cViAJUJHuhMfXCgYHpBT9i6obOgtgr3w592zXTwmdMfW8Ren4QOsHSdVYr8-hXC_8emtqLgCxtx1m6vm8HgRuG1ycsbyur?type=png)](https://mermaid.live/edit#pako:eNqtkmFr2zAQhv-KUD7OyWzLTmwxCokdRiBjhY59mF2KbJ9tEVsyikyahfz3qrZbWgZjsApx3Env-5wkdMG5LABTXDbylNdMafQjTgUyY520jItFd_6Sqc830X6HdkKDKlkO92g-v0GbRLHqAUTFBbzIvqu8hqNWTHMp0J6dQd2PuM3giZKoVrJl8WaQ_4RcS4XuTIB3ujjhojIgQ3noeAeN6TE4Ypn3LQiNbpXM4Xg0sskYDcZt8hVaLjha3-4Gw37_DX1C2zaDYhLGo3AsxnjU5wbQGpW8aejMYSsCgWWuIQ9AZ7ZtT_n8xAtdU9I9WrlspKKzsiytUgo9PwGvak0z2RRvkZsJWWZZbnv_hHze-xsympAhIR4sP-SU8ccjtxOSeCzwyX8ix2j-wOFugBdQsr7R6IVKCPmDii1cKV5gWrLmCBZuQZn_bGp8ecalWNfQQoqpSQumDilOxdWYOiZ-SdliqlVvbEr2Vf0K6buCaYg5qxRrX1cViAJUJHuhMfXCgYHpBT9i6obOgtgr3w592zXTwmdMfW8Ren4QOsHSdVYr8-hXC_8emtqLgCxtx1m6vm8HgRuG1ycsbyur)
@@ -266,30 +266,3 @@ Tikka Masala, Dal Tadka, Salad Bar, and Gulab Jamun for dessert.
 - **Google Gemini**: LLM for generation + embeddings
 - **Pydantic**: Data validation and structured outputs
 - **PyYAML**: Configuration management
-
-## ⚙️ Configuration
-
-Key settings in `config.yaml`:
-```yaml
-paths:
-  knowledge_base: "knowledge_base"
-  chroma_persist_dir: "./chroma_db"
-  collection_name: "techcorp_docs"
-
-active_provider: "gemini"
-
-# Model Configurations
-models:
-  gemini:
-    embedding_model: "gemini-embedding-001"
-    gemini_model: "gemini-2.5-flash"
-    embedding_dimension: 768
-    task_type: "retrieval-document"
-    temperature_intent: 0
-    temperature_content: 0.5
-    max_tokens: 1024
-
-retrieval:
-  top_k: 5
-  similarity_search_k: 10
-```
