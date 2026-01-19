@@ -210,8 +210,20 @@ Tikka Masala, Dal Tadka, Salad Bar, and Gulab Jamun for dessert.
 ## 🏗️ Technical Architecture
 
 ### Component Overview
-[![](https://mermaid.ink/img/pako:eNqtkmFr2zAQhv-KUD7OyWzLTmwxCokdRiBjhY59mF2KbJ9tEVsyikyahfz3qrZbWgZjsApx3Env-5wkdMG5LABTXDbylNdMafQjTgUyY520jItFd_6Sqc830X6HdkKDKlkO92g-v0GbRLHqAUTFBbzIvqu8hqNWTHMp0J6dQd2PuM3giZKoVrJl8WaQ_4RcS4XuTIB3ujjhojIgQ3noeAeN6TE4Ypn3LQiNbpXM4Xg0sskYDcZt8hVaLjha3-4Gw37_DX1C2zaDYhLGo3AsxnjU5wbQGpW8aejMYSsCgWWuIQ9AZ7ZtT_n8xAtdU9I9WrlspKKzsiytUgo9PwGvak0z2RRvkZsJWWZZbnv_hHze-xsympAhIR4sP-SU8ccjtxOSeCzwyX8ix2j-wOFugBdQsr7R6IVKCPmDii1cKV5gWrLmCBZuQZn_bGp8ecalWNfQQoqpSQumDilOxdWYOiZ-SdliqlVvbEr2Vf0K6buCaYg5qxRrX1cViAJUJHuhMfXCgYHpBT9i6obOgtgr3w592zXTwmdMfW8Ren4QOsHSdVYr8-hXC_8emtqLgCxtx1m6vm8HgRuG1ycsbyur?type=png)](https://mermaid.live/edit#pako:eNqtkmFr2zAQhv-KUD7OyWzLTmwxCokdRiBjhY59mF2KbJ9tEVsyikyahfz3qrZbWgZjsApx3Env-5wkdMG5LABTXDbylNdMafQjTgUyY520jItFd_6Sqc830X6HdkKDKlkO92g-v0GbRLHqAUTFBbzIvqu8hqNWTHMp0J6dQd2PuM3giZKoVrJl8WaQ_4RcS4XuTIB3ujjhojIgQ3noeAeN6TE4Ypn3LQiNbpXM4Xg0sskYDcZt8hVaLjha3-4Gw37_DX1C2zaDYhLGo3AsxnjU5wbQGpW8aejMYSsCgWWuIQ9AZ7ZtT_n8xAtdU9I9WrlspKKzsiytUgo9PwGvak0z2RRvkZsJWWZZbnv_hHze-xsympAhIR4sP-SU8ccjtxOSeCzwyX8ix2j-wOFugBdQsr7R6IVKCPmDii1cKV5gWrLmCBZuQZn_bGp8ecalWNfQQoqpSQumDilOxdWYOiZ-SdliqlVvbEr2Vf0K6buCaYg5qxRrX1cViAJUJHuhMfXCgYHpBT9i6obOgtgr3w592zXTwmdMfW8Ren4QOsHSdVYr8-hXC_8emtqLgCxtx1m6vm8HgRuG1ycsbyur)
-
+flowchart TD
+    A[main.py<br/>CLI Interface] --> B[rag_engine.py<br/>Orchestration Layer]
+    B --> C[ChromaDB<br/>Vector Store]
+    B --> D[ingestion_pipeline<br/>Document Processing]
+    C --> E[Gemini API<br/>LLM + Embed]
+    D --> E
+    
+    style A fill:#1a73e8,stroke:#000,stroke-width:3px,color:#fff,font-weight:bold
+    style B fill:#fbbc04,stroke:#000,stroke-width:3px,color:#000,font-weight:bold
+    style C fill:#9334e6,stroke:#000,stroke-width:3px,color:#fff,font-weight:bold
+    style D fill:#9334e6,stroke:#000,stroke-width:3px,color:#fff,font-weight:bold
+    style E fill:#34a853,stroke:#000,stroke-width:3px,color:#fff,font-weight:bold
+    
+    linkStyle default stroke:#333,stroke-width:3px
 ### Data Flow
 
 1. **Ingestion Phase**:
@@ -236,25 +248,28 @@ Tikka Masala, Dal Tadka, Salad Bar, and Gulab Jamun for dessert.
 
 Key settings in `config.yaml`:
 ```yaml
-# LLM Configuration
-LLM_MODEL: "gemini-1.5-flash"
-TEMPERATURE_CONTENT: 0.3
-EMBEDDING_MODEL: "models/embedding-001"
+paths:
+  knowledge_base: "knowledge_base"
+  chroma_persist_dir: "./chroma_db"
+  collection_name: "techcorp_docs"
 
-# Vector Store
-COLLECTION_NAME: "policy_documents"
-CHROMA_PERSIST_DIR: "./chroma_db"
+active_provider: "gemini"
 
-# Retrieval
-TOP_K: 3
-CHUNK_SIZE: 500
-CHUNK_OVERLAP: 50
+# Model Configurations
+models:
+  gemini:
+    embedding_model: "gemini-embedding-001"
+    llm_model: "gemini-2.5-flash"
+    embedding_dimension: 768
+    task_type: "retrieval-document"
+    temperature_intent: 0
+    temperature_content: 0.5
+    max_tokens: 1024
+
+retrieval:
+  top_k: 5
+  similarity_search_k: 10
 ```
-
-Adjust these based on your needs:
-- **`TOP_K`**: Number of relevant chunks to retrieve (higher = more context, slower)
-- **`TEMPERATURE_CONTENT`**: Lower = more deterministic, higher = more creative
-- **`CHUNK_SIZE`**: Larger chunks = more context per chunk, fewer total chunks
 
 ## 🤝 Contributing
 
