@@ -11,8 +11,8 @@ A Retrieval-Augmented Generation (RAG) system for querying company policies and 
 - [Quick Setup](#-quick-setup)
 - [Usage](#-usage)
 - [Example Outputs](#-example-outputs)
-- [Limitations](#-limitations)
-- [Technical Architecture](#-technical-architecture)
+- [Limitations](#limitations)
+- [Technical Architecture](#technical-architecture)
 
 ## 🎯 Overview
 
@@ -168,9 +168,9 @@ Options:
 ### Query 1: Remote Work Policy
 **Question:** "Can I work from home?"
 
-![Q_1_and_2](./artifacts/screenshots_outputs/Screenshot 2026-01-19 at 9.31.23 AM.png)
-![Q_3_and_4](./artifacts/screenshots_outputs/Screenshot 2026-01-19 at 9.41.01 AM.png)
-![Question5](./artifacts/screenshots_outputs/Screenshot 2026-01-19 at 9.41.33 AM.png)
+![Q_1_and_2](artifacts/screenshots_outputs/Screenshot 2026-01-19 at 9.31.23 AM.png)
+![Q_3_and_4](artifacts/screenshots_outputs/Screenshot 2026-01-19 at 9.41.01 AM.png)
+![Question5](artifacts/screenshots_outputs/Screenshot 2026-01-19 at 9.41.33 AM.png)
 
 *[Screenshots will be added here after testing]*
 
